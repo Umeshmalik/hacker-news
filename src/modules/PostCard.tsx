@@ -7,7 +7,7 @@ const Span = lazy(()=> import("../../components/Span"));
 
 const PostCard: FC<PostCardProps> = ({ post }) => {
     return <Link to={`/post/${post.objectID || post?.id}`}>
-        <Card className="p-2 my-4 cursor-pointer">
+        <Card css={{margin: "$10 $0", padding: "$1"}}>
             { post?.title ? <Card.Header>
                 <Text h3 size={20} weight="bold" className="mx-3" >{post?.title}</Text>
                 <Span icon="💯" className="bg-gray-100 text-gray-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-900 capitalize w-fit p-1 my-2">{post?.points}</Span>

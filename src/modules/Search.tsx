@@ -27,7 +27,7 @@ const Search: FC<SearchProps> = ({ updateLoader, updatePosts}) => {
         updateLoader(false)
     }
 
-    return (<Container className="flex justify-center">
+    return (<Container css={{display: 'flex', justifyContent: "center"}}>
         <Input ref={inputRef} aria-label="search" type="text" className="w-64 mx-5" placeholder="start typing..." />
         <Button auto flat onPress={fetch}>Search!</Button>
     </Container>)

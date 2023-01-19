@@ -31,10 +31,10 @@ const Post: FC = () => {
             <Card.Body>
                 <section className="flex justify-between">
                     <section>
-                        <Span icon="✍️" className="bg-gray-100 text-gray-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 capitalize w-fit p-1 my-2">{data?.author}</Span>
-                        <Span icon="Type:" className="bg-indigo-100 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300 capitalize w-fit p-1 my-2">{data?.type}</Span>
-                        <Span icon="⏱️" className="bg-red-100 text-red-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300 capitalize w-fit p-1 my-2">{new Date(data?.created_at as Date).toLocaleDateString()}</Span>
-                        <Span icon="💯" className="bg-green-100 text-green-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 capitalize w-fit p-1 my-2">{data.points}</Span>
+                        <Span icon="✍️" className="bg-gray-100 text-gray-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-white capitalize w-fit p-1 my-2">{data?.author}</Span>
+                        <Span icon="Type:" className="bg-indigo-100 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-white capitalize w-fit p-1 my-2">{data?.type}</Span>
+                        <Span icon="⏱️" className="bg-red-100 text-red-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-white capitalize w-fit p-1 my-2">{new Date(data?.created_at as Date).toLocaleDateString()}</Span>
+                        <Span icon="💯" className="bg-green-100 text-green-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-white capitalize w-fit p-1 my-2">{data.points}</Span>
                     </section>
                     <a href={data?.url} className='to-blue-700' target="_blank">🔗 Original Story</a>
                 </section>

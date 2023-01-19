@@ -9,7 +9,7 @@ interface SpanProps {
 
 const Span: FC<SpanProps> = ({ children, icon, className}) => {
     if(!children) return <></>;
-    return <Text span className={className + "mx-3"}>{icon} {children}</Text>
+    return <span className={className + "mx-3"}>{icon} {children}</span>
 }
 
 export default Span;
